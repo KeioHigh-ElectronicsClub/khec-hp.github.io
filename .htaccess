@@ -1,15 +1,5 @@
-<Files ~ "\.(htaccess|htpasswd)$">
-
-deny from all
-
-</Files>
-
- 
-
-RewriteEngine on
-
-RewriteCond %{THE_REQUEST} ^.*/index.html
-
-RewriteRule ^(.*)index.html$ https://khec.ml/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^.*/index.(html|htm|php)
+RewriteRule ^index.(html|htm|php)$ https://khec.ml/$1 [R=301,L]
+# URL正規化コードここまで
 
 ErrorDocument 404 /404.html
