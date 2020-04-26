@@ -1,0 +1,1 @@
+document.write('<footer><div class="wrapper"><div class="footer-link"><a href="sitemap.html" class="header-link">サイトマップ</a><a href="sitepolicy.html" class="header-link">サイトポリシー</a><a id="cursor-btn">カーソルを半田ごてにする</a></div><hr><p>慶應義塾高等学校電子工学研究会公式サイト</p><small>&copy; 2019 Keio High school Electronics Club</small></div></footer>');

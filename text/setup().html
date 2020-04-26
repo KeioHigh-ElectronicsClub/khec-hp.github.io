@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>慶應高校電子工学研究会 - 私達について</title>
+        <meta name="description" content="慶應高校電子工学研究会公式サイト。新入生へ、私達について、Arduinoレファレンス、作品、技術資料、活動記録、外部リンク。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- OGP設定 -->
+      <meta property="og:url" content="http://khec.ml/aboutus.html">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="慶應高校電子工学研究会 Arduinoテキスト">
+      <meta property="og:description" content="慶應高校電子工学研究会公式サイト。新入生へ、私達について、Arduinoレファレンス、作品、技術資料、活動記録、外部リンク。">
+      <meta property="og:image" content="../images/logo.png">        
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+      <script src="../js/header.js"></script>
+
+      <article class="wrapper" class="text-page">
+            <h2 class="page-title">setup()</h2>
+            <p>Arduinoに電源が入った時やリセットボタンが押された時に1度だけ{}内が実行される。変数やピンモードの初期化(注1)や、ライブラリの準備等に使える。尚、ここでの「初期化」は、メインのプログラムを実行する前に状態を整える事を指し、変数の初期化においては、変数の宣言や定義を行う。ただし、変数の初期化は関数の外のグローバルで行うのが一般的。setup()内でbreak;やcontinue;を使う事は出来ない。<br>
+            <div class="enclosure">
+              ~プログラム例~<br>
+            int buttonPin = 3;　　// 変数の初期化<br>
+            void setup() {<br>
+              Serial.begin(9600);　// シリアル通信の通信レートの設定とシリアル通信の開始。<br>
+              pinMode(buttonPin, INPUT);　//ピンの初期化<br>
+            }<br>
+          </div>
+            (注1) ここでの「初期化」は、メインのプログラムを実行する前に状態を整える事。変数においての初期化は、宣言(注2)や定義(注3)である。<br>
+            (注2) 「宣言」は、変数の型と名前を決めて生成する事。<br>
+            (注3) 「定義」は、変数に値を代入する事。<br>
+            パソコンでコンパイル前にプログラムの内容で指定した文字列を定数や式で置き換えるマクロ(#define)は、Arduinoが行う処理ではないので、setup()内に入れるとエラーになる。<br>
+            （Serial.begin(9600);とbeginSerial(9600);は同じ役割を持つ）</p>
+		  </article>
+
+        <script src="../js/footer.js"></script>
+
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    　　<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+        <script src="../js/stickyfill.min.js"></script>
+        <script src="../js/script.js"></script>
+        <script>directory('../');</script>
+        <!-- ヘッダーのIE対応 -->
+        <script>
+          var elem = document.querySelectorAll('.sticky');
+          Stickyfill.add(elem);
+      </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<Files ~ "\.(htaccess|htpasswd)$">
+
+deny from all
+
+</Files>
+
+ 
+
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} ^.*/index.html
+
+RewriteRule ^(.*)index.html$ http://khec.ml/$1 [R=301,L]
+
+ErrorDocument 404 /404.html

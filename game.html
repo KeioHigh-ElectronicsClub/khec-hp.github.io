@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>慶應高校電子工学研究会 - 部報</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- OGP設定 -->
+    <meta property="og:url" content="http://khec.ml/buhou.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="慶應高校電子工学研究会 部報">
+    <meta property="og:description" content="慶應高校電子工学研究会公式サイト。新入生へ、私達について、Arduinoレファレンス、作品、技術資料、活動記録、外部リンク。">
+    <meta property="og:image" content="/images/logo.png">
+
+	<link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style>
+		header {
+			background-color: black
+		}
+	</style>
+</head>
+
+<body bgcolor="#222222">
+	<div>
+		<script src="js/header.js"></script>
+		<div style="margin: 5vw 2% 10vw 0;">
+			<!-- メイン -->
+			<div class="main">
+
+
+
+				<div id="buhou">
+					<div style="text-align:center">
+						<h1>
+							<font color="white" size="7">
+								部員作成ーミニゲーム置き場
+							</font>
+						</h1>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
+
+
+
+
+				<div>
+                    <div style="background-color:white;" id="number_game">
+						<p style="margin:0% 0% 20% 30px">
+                            <font color="black" size="5">田中君がスマホに５桁のパスワードを設定しました。<br>
+                                                        しかし、田中君のスマホはセキュリティが甘く、いくつかのヒントをくれます。<br>
+                                                        それをもとに田中君のスマホのロックを解除しましょう！！<br>
+                                                        <br>
+                                                        strike>>桁と数字が完全一致している個数<br>
+                                                        hit>>数字だけ一致している個数<br>
+                            
+                                                        <input type="text" id="input_message" value=""　style="margin: 50px" style="background-color:gray" size="30"><input type="button" id="input_button" value="解除！！" style="background-color:red" size="30" onclick="OnbuttonClick();">
+                                                        <br>
+                                                        <div id="output">
+                                                            strike:
+                                                        </div>
+                                                    
+                                                        <div id="hit">
+                                                            hit:
+                                                        </div>
+                                                    </font>
+						</p>
+					</div>
+
+				<!-- メイン ここまで -->
+				<!-- フッター -->
+				<script src="js/footer.js"></script>
+				<!-- フッター ここまで -->
+			</div>
+			<script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			 crossorigin="anonymous"></script>
+			<script src="js/stickyfill.min.js"></script>
+			<script src="js/script.js"></script>
+			<script>
+				var elements = document.querySelectorAll('.header');
+                //ゲーム用
+                //こっからはcomputerの数字決め。
+                var arr = [0,1,2,3,4,5,6,7,8,9];
+                var a = arr.length;
+                while (a) {
+                    var j = Math.floor( Math.random() * a );
+                    var t = arr[--a];
+                    arr[a] = arr[j];
+                    arr[j] = t;
+                }
+                const computer_number=10000*arr[0]+1000*arr[1]+100*arr[2]+10*arr[3]+1*arr[4];
+
+
+                //こっからはプレイヤー君の答えがいくらあたってるかチェック
+                function OnbuttonClick(){
+                    const input_number=document.getElementById("input_message").value;
+                    var strike=0;
+                    var hit=0;
+                    var player_compare_number=[0,1,2,3,4];
+                    var computer_compare_number=[0,1,2,3,4];
+
+                //配列にばらす
+                for_compare(input_number,player_compare_number);
+                for_compare(computer_number,computer_compare_number);
+
+                //勝ったかどうか
+                if(computer_number==input_number){
+                    document.getElementById("output").innerText=<font color="black" size="5">"成功！！"</font>;
+                    document.getElementById("hit").innerText=<font color="black" size="5">" "</font>;
+                //hit strike 数える。
+                }else{
+                    for(var i=0;i<5;i++){
+                        for(var j=0;j<5;j++){
+                            if(player_compare_number[i]==computer_compare_number[j]){
+                                if(i==j){
+                                    strike=strike+1;
+                                }else{
+                                    hit=hit+1;
+                                }
+                            }
+                        }
+                    }
+                    document.getElementById("output").innerText=<font color="black" size="5">"strike:"+strike</font>;
+                    document.getElementById("hit").innerText=<font color="black" size="5">"hit:"+hit</font>;
+                }
+                }
+
+
+                function for_compare(number,ar){
+                    out:
+                    for(var a=0;a<=9;a++){
+                        for(var b=0;b<=9;b++){
+                            for(var c=0;c<=9;c++){
+                                for(var d=0;d<=9;d++){
+                                    for(var e=0;e<=9;e++){
+                                        if(10000*a+1000*b+100*c+10*d+1*e==number){
+                                            ar[0]=a;
+                                            ar[1]=b;
+                                            ar[2]=c;
+                                            ar[3]=d;
+                                            ar[4]=e;
+                                            break out;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            console.log("確認用");
+            console.log(computer_number);
+
+		</script>
+		</div>
+	</div>
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="js/stickyfill.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- IE対応 -->
+    <script>
+        var elem = document.querySelectorAll('.sticky');
+        Stickyfill.add(elem);
+    </script>
+</body>
+
+</html>
