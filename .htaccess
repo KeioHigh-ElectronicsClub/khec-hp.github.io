@@ -1,5 +1,6 @@
-RewriteCond %{THE_REQUEST} ^.*/index.(html|htm|php)
-RewriteRule ^index.(html|htm|php)$ https://khec.ml/$1 [R=301,L]
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^.*/index\.html
+RewriteRule ^(.*)/index\.html$ http://%{HTTP_HOST}/$1 [R=301,L]
 # URL正規化コードここまで
 
 ErrorDocument 404 /404.html
