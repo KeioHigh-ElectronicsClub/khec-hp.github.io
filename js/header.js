@@ -14,7 +14,7 @@ document.write('<header class="sticky">');
                         document.write('<ul>');
                             document.write('<li><a href="buhou.html" class="header-link">部報</a></li>');
                             document.write('<li><a href="text.html" class="header-link">テキスト</a></li>');
-                            document.write('<li><a href="text.html" class="header-link">技術資料</a></li>');
+                            document.write('<li><a href="document.html" class="header-link">技術資料</a></li>');
                         document.write('</ul>');
                     document.write('</li>');  // /活動記録
                 document.write('<li><a href="login.html" class="header-link">部員ページ</a></li>');
