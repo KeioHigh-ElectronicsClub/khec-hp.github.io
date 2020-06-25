@@ -10,10 +10,9 @@
     <!-- OGP設定 -->
     <meta property="og:url" content="http://khec.ml/index.html">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="慶應高校電子工学研究会 HTML・CSS講座 テキスト">
-    <meta property="og:description" content="慶應高校電子工学研究会公式サイト。新入生へ、私達について、Arduinoレファレンス、作品、技術資料、活動記録、外部リンク。">
+    <meta property="og:title" content="慶應高校電子工学研究会『HTML・CSS講座』テキスト">
+    <meta property="og:description" content="慶應高校電子工学研究会内で実施した『HTML・CSS講座』にて使用したテキストです。">
     <meta property="og:image" content="/images/logo.png">
-    <meta name="twitter:image" content="/images/logo.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -22,35 +21,37 @@
 
 <body>
     <script src="js/header.js"></script>
-    <section class="topics">
-        <div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSft_pTeNSF2n1-sn_zFhmPd6k8OxJqo9DolLLH3OWWMcH3Gdg/viewform">
-                <img src="images/kengakuyoyaku.png">
-            </a>
-        </div>
-        <div>
-            <a href="buhou.html">
-                <img src="images/buhou_top.png" style="object-position: 50% 0%; font-family: 'object-fit: cover; object-position: center top;'">
-            </a>
-            <div class="float">
-                <a href="buhou.html">詳細＞</a>
-                <a href="pdf/20-03buhou_normal.pdf">PDFを開く＞</a>
-            </div>
-        </div>
-        <h2 class="page-title" style="background: rgb(48, 48, 48); color: white; margin-bottom: 10px;">↓近日公開</h2>
-        <div>
-            <a href="untitled.html">
-                <img src="images/3Dmodel_top.png">
-            </a>
-        </div>
-        <h2 class="page-title" style="background: rgb(48, 48, 48); color: white;">↓近日公開</h2>
-        <div>
-            <a href="untitled.html">
-                <img src="images/nfcTopic.png">
-            </a>
-        </div>
-    </section>
-    <!-- /.topics -->
+    
+    <article class="wrapper" id="html-text">
+        <h2 class="page-title">HTML・CSSテキスト</h2>
+        <h3 class="sub-title">HTMLやCSSの利点</h3>
+        <p>　まず、HTMLやCSSは、Webサイト等を作成する際に使用する言語です。塾高のWebサイトやTwitterにもそれらは使われています。</p>
+        <p>　多くの方は「フォーマルな情報を広く伝える方法」として、PDF文書を作成する事を思いつくと思います。しかし、PDFには以下のような問題点が有ります。
+        </p>
+        <ul>
+            <li>画面の形に応じて変化しないのでスマホで見にくい。</li>
+            <li>メニューバー等が無いので操作がしにくい。</li>
+            <li>Google等の検索エンジンから見つけにくい。</li>
+            <li>動きのある表示が困難。</li>
+        </ul>
+        <p>こういった問題点を克服出来るのがHTMLやCSSです。ですから、この機会にそれらに触れてみては如何でしょうか。</p>
+        <p>尚、「動きのある表示」とはこういうものです。</p>
+        <p style="color:red; cursor:pointer" id="ismove">ここをクリックしてください。</p>
+        <script>
+            document.getElementById("ismove").onclick = function() {
+                window.alert("これが「動きのある表示」。(ここでウケ狙いたかったんだけど思いつかなかった。)");
+            };
+        </script>
+
+        <h3 class="sub-title">HTML・CSSとは</h3>
+            <p>　Webページを構成するファイルのうち、<span style="color: red;">HTMLファイル</span>が中心となるファイルで、HTMLという言語でWebページの内容を記述します。</p>
+            <p>　しかし、HTMLだけでは単なる文字の羅列が表示されるだけで、それらのレイアウトを整えたり、装飾したりする事は出来ません。そこで登場するのが<span style="color: red;">CSSファイル</span>で、CSSという言語でHTMLの内容の表示を見やすくレイアウトを整えたり、装飾したりします。</p>
+            <p>　他にも、Webページには画像ファイルやPDFファイル等も含まれています。</p>
+
+        <h3 class="sub-title">練習用データの準備</h3>
+            <p>　お手数ですが、以下のリンクからHTMLやCSSを記述する雛形となる練習用データをダウンロードして下さい。</p>
+            <a href="練習用データ" download="練習用データ">練習用データをダウンロードする</a>
+    </article>
 
     <script src="js/footer.js"></script>
 
