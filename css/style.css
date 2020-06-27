@@ -410,9 +410,23 @@ article p {
 
 /* HTML・CSSテキスト
 ------------------------------- */
-.envelope {
+#html-text .envelope-red {
     padding: 0 10px;
     border: 5px dotted tomato;
+}
+#html-text .envelope-blue {
+    padding: 0 10px;
+    margin-top: 10px;
+    border: 5px dotted #31136E;
+}
+#html-text .red {
+    color: red;
+}
+#html-text .indent-1 {
+    text-indent: 1em;
+}
+#html-text .indent-2 {
+    text-indent: 2em;
 }
 
 /* モバイル版
