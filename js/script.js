@@ -15,12 +15,35 @@ var directory = function(directory) {
     }
 }
 
+// フェードイン
+$(function(){
+    function animation(){
+      $('.fadeInUp').each(function(){
+        //ターゲットの位置を取得
+        var target = $(this).offset().top;
+        //スクロール量を取得
+        var scroll = $(window).scrollTop();
+        //ウィンドウの高さを取得
+        var windowHeight = $(window).height();
+        //ターゲットまでスクロールするとフェードインする
+        if (scroll > target - windowHeight){
+          $(this).css('opacity','1');
+          $(this).css('transform','translateY(0)');
+        }
+      });
+    }
+    animation();
+    $(window).scroll(function (){
+      animation();
+    });
+  });
+
 // 画面幅が変わった時の処理
 var w;
 w = $(window).width();
 $(window).resize(function(){
     w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    if (w >= 600) {
+    if (w > 600) {
         $('.sub-nav ul').hide();
         $('header div').not('#sitemap div').addClass("wrapper");
         $('nav').show();
