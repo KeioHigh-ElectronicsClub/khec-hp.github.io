@@ -20,6 +20,11 @@ img {
 ul {
     list-style-position: inside;
 }
+.fadeInUp {
+    opacity : 0;
+    transform: translateY(20px);
+    transition: 1s;
+  }
 
 /* ヘッダー */
 header {
@@ -427,6 +432,38 @@ article p {
 }
 #html-text .indent-2 {
     text-indent: 2em;
+}
+
+/* 部員一覧
+------------------------------- */
+#members .sub-title {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30px;
+    background-color: white;
+    z-index: 50;
+}
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+    align-items: end;
+}
+.item {
+    text-decoration: none;
+}
+.member-position {
+    color: black;
+    border-style: none;
+}
+.member-name {
+    display: inline;
+    color: #0070c9;
+}
+.member-name:hover {
+    border-bottom: solid 1.5px #0070c9;
 }
 
 /* モバイル版
