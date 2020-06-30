@@ -439,13 +439,13 @@ article p {
 #members .sub-title {
     position: -webkit-sticky;
     position: sticky;
-    top: 30px;
-    background-color: white;
+    top: 26px;
     z-index: 50;
+    background-color: rgba(255,255,255);
 }
 .grid {
     display: grid;
-    gap: 35px;
+    gap: 26px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-top: 6%;
     margin-bottom: 50px;
@@ -453,6 +453,16 @@ article p {
 }
 .item {
     text-decoration: none;
+    height: 100%;
+    padding: 15px;
+    border: solid #31136E 1.5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.item:hover {
+    background-color: #DDD;
 }
 .member-position {
     color: black;
@@ -461,9 +471,6 @@ article p {
 .member-name {
     display: inline;
     color: #0070c9;
-}
-.member-name:hover {
-    border-bottom: solid 1.5px #0070c9;
 }
 
 /* モバイル版
