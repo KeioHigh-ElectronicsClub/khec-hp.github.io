@@ -464,6 +464,9 @@ article p {
 .item:hover {
     background-color: #DDD;
 }
+.member-picture {
+    border-radius: 5px;
+}
 .member-position {
     color: black;
     border-style: none;
