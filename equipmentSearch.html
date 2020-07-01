@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>塾高電工研備品検索</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="robots" content="noindex,nofollow">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="css/style-search.css">
+</head>
+
+<body>
+  <script src="js/header.js"></script>
+  <div class="wrapper2">
+    <main>
+      <h1 class="page-title">備品検索</h1>
+      <p>電工研の備品を検索できます。</p>
+      <p>プライバシー保護のため一部の情報を表示しておりません。</p>
+
+      <section class="searhByKeyword">
+        <h2 class="sub-title">キーワード検索</h2>
+        <input type="text" name="keyword" id="keyword">
+        <input type="submit" value="検索" id="keyword_submit">
+      </section>
+
+      <section class="searchByItem">
+        <h2 class="sub-title">項目別検索</h2>
+        <div id="items">
+          <ul>
+            <li class="searchItem">
+              <label>カテゴリー </label>
+              <select name="category" id="category">
+                <option value="">未選択</option>
+              </select>
+            </li>
+            <li class="searchItem">
+              <label>名前 </label>
+              <input type="text" name="name" id="name"></li>
+            <li class="searchItem">
+              <label>定数１ </label>
+              <input type="text" name="constant1" id="constant1">
+            </li>
+            <li class="searchItem">
+              <label>定数２ </label>
+              <input type="text" name="constant2" id="constant2">
+            </li>
+            <li class="searchItem">
+              <label>数量 </label>
+              <input type="text" name="number" id="number"></li>
+            <li class="searchItem">
+              <label>場所</label>
+              <select name="place" id="place">
+                <option value="">未選択</option>
+              </select></li>
+            <li class="searchItem">
+              <label>更新日 </label>
+              <input type="date" name="date" id="date"></li>
+            <input type="submit" value="検索" id="item_submit">
+          </ul>
+        </div>
+
+      </section>
+
+
+      <div id="result">
+        <h2 class="sub-title">検索結果</h2>
+        <h3 id="searching">検索中</h3>
+        <select name="sort" id="sort">
+          <option value="">ソートを指定</option>
+          <option value="nameUp">名前昇順</option>
+          <option value="constant1Up">定数1昇順</option>
+          <option value="constant2Up">定数2昇順</option>
+          <option value="numberUp">数量昇順</option>
+          <option value="dateUp">更新日昇順</option>
+          <option value="nameDown">名前降順</option>
+          <option value="constant1Down">定数1降順</option>
+          <option value="constant2Down">定数2降順</option>
+          <option value="numberDown">数量降順</option>
+          <option value="dateDown">更新日降順</option>
+        </select>
+        <select name="categoryFilter" id="categoryFilter">
+          <option value="">カテゴリーを指定</option>
+        </select>
+        <select name="placeFilter" id="placeFilter">
+          <option value="">場所を指定</option>
+        </select>
+        <section id="list"> </section>
+      </div>
+
+    </main>
+
+  </div>
+  <script src="js/footer.js"></script>
+  <script src="js/script-search.js"></script>
+  <script src="js/script.js"></script>
+  　　<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+      <script src="js/stickyfill.min.js"></script>
+  <script>
+    var elem = document.querySelectorAll('.sticky');
+    Stickyfill.add(elem);
+</script>
+</body>
+
+</html>
