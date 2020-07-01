@@ -1,0 +1,410 @@
+body {
+  font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体',
+    'ヒラギノ角ゴ Pro W3', sans-serif;
+  margin: 0;
+}
+.wrapper2 {
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  margin-bottom: 50px;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-top: 30px;
+  text-align: center;
+}
+.sub-title {
+  font-size: 2rem;
+  padding: 10px 8px 0px 0px;
+  margin-bottom: 15px;
+  border-bottom: 2px #31136e solid;
+  font-weight: normal;
+}
+#keyword {
+  line-height: 200%;
+  width: 23rem;
+}
+#keyword_submit {
+  border: none;
+  cursor: pointer;
+  background: #383838;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+input,
+select {
+  width: 180px;
+  box-sizing: border-box;
+}
+
+.searchByItem > h2 {
+  cursor: pointer;
+  position: relative;
+}
+.searchByItem > h2:after {
+  content: ' ';
+  position: absolute;
+  left: 185px;
+  top: 30px;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px;
+  border-right: solid 2px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.searchByItem > h2.open:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 45%;
+}
+.searchByItem > label {
+  display: block;
+  margin-bottom: 8px;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+.searchItem {
+  display: flex;
+  margin: 5px auto;
+}
+.searchItem > label {
+  flex-basis: 15rem;
+}
+#item_submit {
+  border: none;
+  cursor: pointer;
+  background: #383838;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+#items {
+  display: none;
+  padding: 4px 0;
+}
+
+@media screen and (max-width: 590px) {
+  #keyword {
+    width: 96%;
+  }
+  .searchItem > input {
+    flex-basis: 101%;
+    margin-right: 10px;
+  }
+  .searchItem > select {
+    flex-basis: 103%;
+    margin-right: 10px;
+  }
+  #keyword_submit {
+    width: 95.8%;
+  }
+  #item_submit {
+    width: 100%;
+  }
+}
+#keyword_submit:hover,
+#item_submit:hover {
+  background-color: #31136e;
+}
+#result {
+  display: none;
+}
+#searching {
+  text-align: center;
+  display: none;
+}
+#list > .resultBox {
+  margin: 0 auto;
+  border-bottom: black 1px dashed;
+}
+#list > .resultBox > .valueWrap > .categoryNameWrap {
+  display: flex;
+}
+
+#list > .resultBox > .valueWrap > .categoryNameWrap > .category {
+  font-weight: bold;
+  flex-basis: 10rem;
+  vertical-align: bottom;
+  margin: 0.3rem 0;
+}
+#list > .resultBox > .valueWrap > .categoryNameWrap > .name {
+  margin: 0.3rem 0;
+  flex-basis: 550px;
+}
+#list > .resultBox > .valueWrap > .categoryNameWrap > .number {
+  flex-basis: 100px;
+  text-align: right;
+  margin: 0.3rem 0;
+}
+
+#list > .resultBox > .valueWrap > div {
+  display: flex;
+}
+
+#list > .resultBox p {
+  margin: 0.3rem 2rem;
+  margin-left: 0;
+}
+
+
+.wrapper {
+  max-width: 982.125px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+/* ヘッダー */
+header {
+  background: #383838;
+  position: sticky;
+  z-index: 80;
+  top: 0;
+  height: 59px;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  margin: 0;
+}
+.logo {
+  margin-top: 3px;
+  transition-duration: 0.2s;
+  height : 48px;
+}
+.logo:hover {
+  transform: scale(0.95,0.95);
+}
+#btn {
+  display: none;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.25rem;
+  margin: 0;
+}
+.main-nav li {
+  padding: 10px 0 17px 0;
+  transition-duration: 0.2s;
+}
+.main-nav li:hover {
+  background-color: #31136E;
+}
+.main-nav a {
+  padding: 0 30px 0 30px;
+  display: block;
+  word-break: keep-all;
+  text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+.main-nav a:hover {
+  transform: scale(0.95,0.95);
+}
+.sub-nav {
+  position: relative;
+}
+.sub-nav>a:hover {
+  transform: none;
+  cursor: default;
+}
+.sub-nav > a::after {
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+  position: absolute;
+  right: 13px;
+  top: 25px;
+}
+.rotate1::after {
+  transform: rotate(-180deg);
+  transition: 0.4s;
+}
+.rotate2::after {
+  transform: rotate(0deg);
+  transition: 0.4s;
+}
+.sub-nav ul{
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 59px;
+  z-index: 100;
+  background: #31136E;
+  border-radius: 0 0 5px 5px;
+  padding: 0;
+  padding: 10px 0px 20px 0;
+  min-width: 100%;
+}
+.sub-nav li {
+  display: block;
+  margin: 0;
+  padding: 5px;
+}
+.sub-nav li a {
+  padding: 0 10px 0 30px;
+}
+
+
+/* フッター */
+footer {
+  margin-top: 30px;
+  background: #383838;
+  padding: 10px 0;
+}
+footer small{
+  text-align: center;
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+}
+footer p {
+  color: #fff;
+}
+.footer-link {
+  display: inline;
+  padding-right: 20px;
+}
+footer hr {
+  margin: 10px 0;
+  border: 0;
+  border-top:1px solid #fff;
+}
+#cursor-btn {
+  cursor: pointer;
+}
+.kote-cursor {
+  cursor: url("../images/kote.cur"), auto !important;
+}
+
+@media (max-width: 600px) {
+  /* ヘッダー */
+  header div {
+      display: block;
+  }
+  header h1 {    
+      text-align: center;
+      height: 59px;
+  }
+  .stop-scroll {
+      overflow: hidden;
+  }
+  #btn {
+      display: block;
+      color: white;
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      z-index: 100;
+      cursor: pointer;
+      margin: 0;
+  }
+  nav {
+      height: 100vh;
+      padding-top: 30px;
+      display: none;
+      background: #383838;
+      overflow: scroll;
+  }
+  .main-nav{
+      flex-direction: column;
+      overflow: auto;
+      padding-bottom: 70px;
+  }
+  .blue {
+      background: #31136E;
+  }
+  .main-nav li:hover {
+      background: transparent;
+  }
+  .main-nav > li > a {
+      padding: 20px 0 20px 30px;
+      border-radius: 5px;
+  }
+  .main-nav > li > a:hover {
+      background: #31136E;
+  }
+  .sub-nav ul{
+      position: static;
+      background: transparent;
+      padding: 0;
+  }
+  .sub-nav li {
+      padding: 0 0 0 30px;
+      padding: 20px 0 20px 0px;
+      margin-left: 40px;
+      border-left: 2px solid #fff;
+  }
+  .sub-nav li:hover {
+      background: #31136E;
+      border-radius: 0 5px 5px 0;
+  }
+  .sub-nav li a {
+      margin-left: 5px;
+  }
+  .sub-nav > a::after {
+      top: 40px;
+  }
+  #btn {
+      width: 1.75rem;
+      height: 1.5rem;
+  }
+  #btn i {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      transition: transform .5s, opacity .5s;
+  }
+  #btn i:nth-child(1) {
+      top: 0;
+  }
+  #btn i:nth-child(2) {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+  }
+  #btn i:nth-child(3) {
+      bottom: 0;
+  }
+  #btn.show i:nth-child(1) {
+      transform: translateY(10px) rotate(-45deg);
+  }
+  #btn.show i:nth-child(2) {
+      opacity: 0;
+  }
+  #btn.show i:nth-child(3) {
+      transform: translateY(-12px) rotate(45deg);
+  }   
+  .footer-link {
+    display: block;
+    margin-left: 0px;
+  }
+}
