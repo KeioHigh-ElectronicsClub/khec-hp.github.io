@@ -216,6 +216,17 @@ body div {
   color: #2C7CFF;
   text-decoration: none;
 }
+.date {
+    position: relative;
+    display: inline-block;
+    top: 2vw;
+    left: 2vw;
+    padding: 5px;
+    font-size: 1vw;
+    background-color: #fff;
+    border: solid #31136E 1px;
+    border-radius: 5px;
+}
 
 /* 私達について
 ------------------------------- */
