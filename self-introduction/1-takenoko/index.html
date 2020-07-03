@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>たけのこの自己紹介ページ</title>
+<style>
+    body {
+        background-image: url("teiko.jpg");
+        background-size: 40px 20px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 4%;
+    }
+    h1 {
+        text-align: center;
+        background-color: white;
+        border: solid green 2px;
+        border-radius: 5px;
+        padding: 30px;
+    }
+    ul {
+        background-color: white;
+        padding: 30px;
+        padding: 30px 30px 30px 40px;
+        border: solid blue 2px;
+        text-align: start;
+        border-radius: 5px;
+        list-style: square url("star.png") outside;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        padding: 30px;
+        border: solid red 2px;
+    }
+    .container > div {
+        padding-left: 20px;
+    }
+    .container > div > img {
+        width: 400px;
+    }
+    @media (max-width: 1000px) {
+        .container {
+            flex-direction: column;
+        }
+        .container > div > img {
+        width: 60vw;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <h1>たけのこ</h1>
+    <div class="container">
+        <div>
+            <img src="fish.JPG">
+            <p>↑昔飼っていた金魚</p>
+        </div>
+        <div>
+            <img src="radio.JPG">
+            <p>↑アマチュア無線のアンテナのメンテナンス中</p>
+        </div>
+    </div>
+    <ul>
+        <li>役職: 備品管理、外務(Webサイト担当)</li>
+        <li>班: NFC班、C++班</li>
+        <li>以前作った作品: ダウジングゲーム、発車標(活動外)</li>
+        <li>電工研に入った理由: 電気機器が好きだったから。</li>
+        <li>好きな言語: HTML、CSS、JavaScript(好きと得意は別物です。)</li>
+        <li>座右の銘: 成り行きで適当に</li>
+        <li>所属している部活: 電子工学研究会、山岳部、情報科学研究会、バスケットボール部B</li>
+        <li>趣味: ウクレレ、山登り、クライミング、観賞魚飼育、パソコンをいじること</li>
+        <li>好きなもの: カレーライス、スタジオジブリ作品、back number、Orangestar</li>
+    </ul>
+    <small>&copy; 2020 Takehiro Tanabe</small>
+</div>
+</body>
+</html>
