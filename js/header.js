@@ -8,6 +8,7 @@ document.write('<header class="sticky">');
                     document.write('<ul>');
                         document.write('<li><a href="aboutus.html#link" class="header-link">リンク</a></li>');
                         document.write('<li><a href="aboutus.html#contact" class="header-link">お問い合わせ</a></li>');
+                        document.write('<li><a href="members.html" class="header-link">部員一覧</a></li>');
                         document.write('<li><a href="equipmentSearch.html" class="header-link">備品検索</a></li>');
                     document.write('</ul>');
                 document.write('</li>');  // /私達について
