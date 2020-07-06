@@ -183,6 +183,12 @@ article {
 
 /* トップページ
 ------------------------------- */
+.emergency {
+    border: solid #31136E 2px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+}
 .topics img{
     width: 100%;
     max-height: calc(100vh - 59px);
