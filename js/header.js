@@ -1,4 +1,4 @@
-document.write('<header class="sticky">');
+document.write('<header class="sticky" onclick="">');
     document.write('<div class="wrapper">');
         document.write('<h1><a href="index.html" class="header-link"><img class="logo" src="images/logo.png" alt="慶應高校電子工学研究会"></a></h1>');
         document.write('<div id="btn"><i></i><i></i><i></i></div>')
