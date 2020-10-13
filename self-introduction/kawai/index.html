@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介(TEST)</title>
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="index_style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">自己紹介ページ</a>
+    </header>
+
+    <div class="article">
+
+        <div class="sheet">
+
+            <h1>
+                <span>電子工学研究会 </span><span> 自己紹介ページ</span>
+            </h1>
+
+            <div class="box">
+
+                <div class="box_left">
+                    <div class="head1">ニックネーム</div>
+                    <br>
+                    <span class="content1">おうまさん</span>
+                    <br>
+                    <br>
+                    <div class="head1">役職</div>
+                    <br>
+                    <span class="content1">備品管理</span>
+                    <br>
+                    <br>
+                    <div class="head1">班</div>
+                    <br>
+                    <span class="content1">NFC班</span>
+                    <br>
+                    <br>
+                    <div class="head1">以前作った作品</div>
+                    <br>
+                    <span class="content1">なし</span>
+                    <br>
+                    <br>
+                    <div class="head1">電子工学研究会に入った理由</div>
+                    <br>
+                    <span class="content1">
+                        <span>ジャンクPCに興味があったのと、</span>
+                        <span>アナログ回路をかじっていたので、</span>
+                        <br>
+                        <span>電気関係の部活がいいなと思っていました。</span>
+                        <br>
+                        <span>プログラミングの習得もしたいと思い、</span>
+                        <span>この部活に入部しました。</span>
+                        <br>
+                        <br>
+                        <div class="head1">その他</div>
+                        <br>
+                        <span class="content1">ダークモード信者です。</span>
+                        <br>
+                        <br>
+                </div>
+
+                <div class="box_right">
+                    <div class="icon">
+                        <img src="img/robbin-296px.png" alt="robbinの写真">
+                        <br>
+                        <span>ロビン</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <span>慶應義塾高等学校　電子工学研究会</span>
+        <br>
+        <br>
+        <span>最終アクセス　</span>
+
+        <div id="myClock" color:#000000></div>
+
+        <span id="view_time"></span>
+
+        <script type="text/javascript">
+            document.bgColor = "#333333";
+            document.fgColor = "#FFFFFF";
+
+
+            document.getElementById("view_time").innerHTML = getNow();
+
+            function getNow() {
+                var now = new Date();
+                var year = now.getFullYear();
+                var mon = now.getMonth() + 1;
+                var day = now.getDate();
+                var hour = now.getHours();
+                var min = now.getMinutes();
+                var sec = now.getSeconds();
+
+                var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒";
+                return s;
+            }
+        </script>
+
+    </footer>
+
+</body>
+
+</html>
