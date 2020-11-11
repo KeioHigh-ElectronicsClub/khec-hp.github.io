@@ -337,7 +337,61 @@ article p {
 /* .link {
 	color: #0044CC;
 } */
+.buhou-body {
+  background-color: #222222;
+}
 
+.buhou-hero {
+  display: flex;
+  padding: 5rem;
+  color: white;
+}
+
+.buhou-hero img {
+  display: block;
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  margin-right: 0;
+  flex-grow: 1;
+}
+
+.buhou-hero section {
+  flex-grow: 2;
+}
+
+.buhou-hero h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+/* aks = あんまり改行してほしくない */
+/* inline-blockにしたspanで囲んだ範囲をあんまり改行されないようにする */
+.aks {
+  display: inline-block;
+}
+
+.buhou-hero h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .buhou-hero {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .buhou-hero img {
+    width: 70%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .buhou-hero h1 {
+    font-size: 3rem;
+  }
+}
 .buhou-download {
   padding: 2vw;
   width: fit-content;
