@@ -1,235 +1,267 @@
 <!doctype html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>慶應高校電子工学研究会 - 部報</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<!-- OGP設定 -->
-		<meta property="og:url" content="http://khec.ml/buhou.html">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="慶應高校電子工学研究会 部報">
-		<meta property="og:description" content="慶應高校電子工学研究会公式サイト。新入生へ、私達について、Arduinoレファレンス、作品、技術資料、活動記録、外部リンク。">
-		<meta property="og:image" content="/images/logo.png">
+<head>
+	<meta charset="UTF-8">
+	<title>慶應高校電子工学研究会 - 部報</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- OGP設定 -->
+	<meta property="og:url" content="http://khec.ml/buhou.html">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="慶應高校電子工学研究会 部報">
+	<meta property="og:description"
+		content="慶應高校電子工学研究会公式サイト。新入生へ、私達について、Arduinoレファレンス、作品、技術資料、活動記録、外部リンク。">
+	<meta property="og:image" content="/images/logo.png">
 
-		<link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172973845-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('js', new Date());
+	<link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-172973845-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-			gtag('config', 'UA-172973845-1');
-		</script>
+		gtag('config', 'UA-172973845-1');
+	</script>
 
-		<style>
-			header {
-				background-color: black
-			}
+	<style>
+		header {
+			background-color: black
+		}
 
-			body {
-				background-color: #222222;
-			}
+		body {
+			background-color: #222222;
+		}
 
+		.buhou-hero {
+			display: flex;
+			padding: 5rem;
+			color: white;
+		}
+
+		.buhou-hero img {
+			display: block;
+			width: 50%;
+			max-width: 600px;
+			height: auto;
+			margin: 0 auto;
+			margin-right: 0;
+			flex-grow: 1;
+		}
+
+		.buhou-hero section {
+			flex-grow: 2;
+		}
+
+		.buhou-hero h1 {
+			font-size: 4rem;
+			text-align: center;
+		}
+
+		/* aks = あんまり改行してほしくない */
+		/* inline-blockにしたspanで囲んだ範囲をあんまり改行されないようにする */
+		.aks {
+			display: inline-block;
+		}
+
+		.buhou-hero h3 {
+			text-align: center;
+		}
+
+		@media screen and (max-width:1000px) {
 			.buhou-hero {
-				display: flex;
-				padding: 5rem;
-				color: white;
+				flex-wrap: wrap;
+				padding: 1rem;
 			}
 
 			.buhou-hero img {
-				display: block;
-				width: 50%;
-				max-width: 600px;
-				height: auto;
+				width: 70%;
+				max-width: 400px;
 				margin: 0 auto;
-				margin-right: 0;
-				flex-grow: 1;
-			}
-
-			.buhou-hero section {
-				flex-grow: 2;
-			}
-
-			@media screen and (max-width:1000px) {
-				.buhou-hero {
-					flex-wrap: wrap;
-					padding: 1rem;
-				}
-
-				.buhou-hero img {
-					width: 70%;
-					margin: 0 auto;
-				}
 			}
 
 			.buhou-hero h1 {
-				font-size: 4em;
-				text-align: center;
+				font-size: 3.rem;
 			}
-		</style>
-	</head>
+		}
+	</style>
+</head>
 
-	<body>
-		<script src="js/header.js"></script>
-		<div style="margin: 0 0 10vw 0;">
-			<!-- メイン -->
-			<div class="main">
-				<div class="buhou-hero">
-					<img src="images/moterkun.png" width="50%" alt="モーター君">
+<body>
+	<script src="js/header.js"></script>
+	<div style="margin: 0 0 10vw 0;">
+		<!-- メイン -->
+		<div class="main">
+			<div class="buhou-hero">
+				<img src="images/moterkun.png" width="50%" alt="モーター君">
 
-					<section class="buhou-hero-title">
-						<h1>KHEC部活動報告<wbr> 2020-11</h1>
-						<h3>2020年9月発行の部報では昨年度の活動報告や新年度の活動予定、新情報を掲載しています。</h3>
-					</section>
+				<section class="buhou-hero-title">
+					<h1><span class="aks">KHEC</span><span class="aks">部活動報告</span>
+					</h1>
+					<h1>2020-11</h1>
+					<h3>2020年9月発行の部報では昨年度の活動報告や新年度の活動予定、新情報を掲載しています。</h3>
+				</section>
 
+			</div>
+
+			<div>
+				<!-- 親要素にbuhouHeadというidをつけました -->
+
+				<div
+					style="margin: 0 0 5vw 0; background-color: black; color: #FFFFFF;">
+					<br>
+					<p style="margin: 1vw 0 1vw 3vw; font-size: 12px;">Keio High school
+						Electronics Club [2020/09]</p>
+					<p style="margin: 0 0 0 3vw; font-size: 48px; font-weight: bold;">
+						年間活動報告書</p>
+					<br>
+					<div style="color: white; padding-bottom: 20px;">
+						<a href="pdf/20-09buhou_normal.pdf" download="20-09buhou_normal.pdf"
+							style="font-size: 17px;text-decoration: none;">
+							<p style="margin: 0 0 0 5vw; color: rgb(163, 162, 162);">
+								PDF:部報web版 低画質(2.9MB) ダウンロード</p>
+						</a>
+						<a href="http://khec.starfree.jp/20-09buhou_highqua.pdf"
+							download="20-09buhou_highqua.pdf"
+							style="font-size: 17px; text-decoration: none;">
+							<p style="margin: 0 0 3vw 5vw;  color: rgb(163, 162, 162); ">
+								PDF:部報web版 高画質(54MB) ダウンロード</p>
+						</a>
+					</div>
 				</div>
 
-				<div>
-					<!-- 親要素にbuhouHeadというidをつけました -->
 
-					<div style="margin: 0 0 5vw 0; background-color: black; color: #FFFFFF;">
-						<br>
-						<p style="margin: 1vw 0 1vw 3vw; font-size: 12px;">Keio High school
-							Electronics Club [2020/03]</p>
-						<p style="margin: 0 0 0 3vw; font-size: 48px; font-weight: bold;">
-							年間活動報告書</p>
-						<br>
-						<div style="color: white; padding-bottom: 20px;">
-							<a href="pdf/20-09buhou_normal.pdf" download="20-09buhou_normal.pdf"
-								style="font-size: 17px;text-decoration: none;">
-								<p style="margin: 0 0 0 5vw; color: rgb(163, 162, 162);">
-									PDF:部報web版 低画質(8.1MB) ダウンロード</p>
-							</a>
-							<a href="http://khec.starfree.jp/20-09buhou_highqua.pdf" download="20-09buhou_highqua.pdf"
-								style="font-size: 17px; text-decoration: none;">
-								<p style="margin: 0 0 3vw 5vw;  color: rgb(163, 162, 162); ">
-									PDF:部報web版 高画質(120MB) ダウンロード</p>
-							</a>
+
+
+
+
+
+				<div
+					style="background-color: rgb(0, 0, 109); color: #FFFFFF; font-size: 17px;">
+					<!-- <p style="text-align:center; font-size: 32px;"> 目次</p> -->
+					<!-- <p style="font-size: 24px; font-weight: bold;">2019年度の活動風景</p> -->
+
+					<div class="hidden_box">
+						<input type="checkbox" id="label1" />
+						<div style="font-size: 24px; font-weight: bold;">
+							<label for="label1">
+								自粛中の活動
+							</label>
 						</div>
-					</div>
+						<div class="hidden_show">
+							<div style="margin: 1vw 3vw 3vw 5vw;">
+								<p>４月～６月までの自粛期間中は家での活動となり、最大週4日でテレ
+									ワークを行いました。部内での情報共有も中々難しい状況ではありまし
+									たが、家でも備品等があれば活動はできるので各自で作業を行うことと
+									なりました。</p>
+								<p>
+									　新1年生を対象にArduino講座が開かれ、上級生の作成したテキストに従ってマイコンについて学びました。夏休みの終わりにテストを行い、合格点に満たなかった生徒は再試を受けました。
+								</p>
+								<br>
+								<p>
+									　
+								</p>
+								<br>
 
-
-
-
-
-
-
-					<div style="background-color: rgb(0, 0, 109); color: #FFFFFF; font-size: 17px;">
-						<!-- <p style="text-align:center; font-size: 32px;"> 目次</p> -->
-						<!-- <p style="font-size: 24px; font-weight: bold;">2019年度の活動風景</p> -->
-
-						<div class="hidden_box">
-							<input type="checkbox" id="label1" />
-							<div style="font-size: 24px; font-weight: bold;">
-								<label for="label1">
-									自粛中の活動
-								</label>
-							</div>
-							<div class="hidden_show">
-								<div style="margin: 1vw 3vw 3vw 5vw;">
-									<p>４月～６月までの自粛期間中は家での活動となり、最大週4日でテレ
-										ワークを行いました。部内での情報共有も中々難しい状況ではありまし
-										たが、家でも備品等があれば活動はできるので各自で作業を行うことと
-										なりました。</p>
-									<p>　新1年生を対象にArduino講座が開かれ、上級生の作成したテキストに従ってマイコンについて学びました。夏休みの終わりにテストを行い、合格点に満たなかった生徒は再試を受けました。
-									</p>
-									<br>
-									<p>
-										　
-									</p>
-									<br>
-
-									<div id="buhouHead">
-										<img src="images/photo1.jpg" width="50%" alt="自粛中の活動">
-										<div style="margin: 0 0 0 3vw">
-											<p>年間行事は多く親睦旅行やクリスマス会、新入生歓迎会などの全てかを部員主導で行いました。</p>
-											<br>
-											<p>2019年度は二泊三日で湘南・大磯での親睦旅行を開催しました。 </p>
-											<p>
-												部員全員とOBの方々が参加し、大人数で賑やかながらも周囲への配慮を忘れず、団体生活を自分たちの身の力で行いました。
-											</p>
-											<p>もちろん洗濯・掃除・炊事全てを部員らの手で行います。</p>
-											<p>そしてレクリエーションではメンバー全員で江ノ島を散策しました。</p>
-										</div>
+								<div id="buhouHead">
+									<img src="images/photo1.jpg" width="50%" alt="自粛中の活動">
+									<div style="margin: 0 0 0 3vw">
+										<p>年間行事は多く親睦旅行やクリスマス会、新入生歓迎会などの全てかを部員主導で行いました。</p>
+										<br>
+										<p>2019年度は二泊三日で湘南・大磯での親睦旅行を開催しました。 </p>
+										<p>
+											部員全員とOBの方々が参加し、大人数で賑やかながらも周囲への配慮を忘れず、団体生活を自分たちの身の力で行いました。
+										</p>
+										<p>もちろん洗濯・掃除・炊事全てを部員らの手で行います。</p>
+										<p>そしてレクリエーションではメンバー全員で江ノ島を散策しました。</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div style="background-color: rgb(110, 0, 0); color: #FFFFFF; font-size: 17px;">
-						<!-- <p style="text-align:center; font-size: 32px;"> 目次</p> -->
-						<!-- <p style="font-size: 24px; font-weight: bold;">2019年度の活動風景</p> -->
+				<div
+					style="background-color: rgb(110, 0, 0); color: #FFFFFF; font-size: 17px;">
+					<!-- <p style="text-align:center; font-size: 32px;"> 目次</p> -->
+					<!-- <p style="font-size: 24px; font-weight: bold;">2019年度の活動風景</p> -->
 
-						<div class="hidden_box">
-							<input type="checkbox" id="label2" />
-							<div style="font-size: 24px; font-weight: bold;">
-								<label for="label2">
-									新入生歓迎会
-								</label>
-							</div>
-							<div class="hidden_show">
-								<div style="margin: 1vw 3vw 3vw 5vw;">
-									<p>
-										　2019年度から始めた慶應義塾志木高等学校などの外部団体との活動を主軸に行っており、KHECからは全部員が合同活動に参加しています。
-									</p>
-									<p>
-										　また、今まで以上に明確化した部則や活動形態を目指し、部内での役職行動や提携先との合同活動で部員一人一人が実力を発揮できる環境づくりを行っています。
-									</p>
-									<br>
-									<div id="buhouHead">
-										<img src="images/photo2.jpg" width="50%" alt="新入生歓迎会">
-										<div style="margin: 0 0 0 3vw">
-											<p>他部活との合同活動では規約を設け、班としての団体活動に重きを置いております。</p>
-											<br>
-											<p>
-												そして合同活動後の夕食やクリスマス会などを通じて、たくさんの意見を交換したり部活動とは関係ない高校生らしい会話を交わすことで親睦を深め、今後の活動をより楽しく円滑に行えるようにしています
-											</p>
-										</div>
+					<div class="hidden_box">
+						<input type="checkbox" id="label2" />
+						<div style="font-size: 24px; font-weight: bold;">
+							<label for="label2">
+								新入生歓迎会
+							</label>
+						</div>
+						<div class="hidden_show">
+							<div style="margin: 1vw 3vw 3vw 5vw;">
+								<p>
+									　2019年度から始めた慶應義塾志木高等学校などの外部団体との活動を主軸に行っており、KHECからは全部員が合同活動に参加しています。
+								</p>
+								<p>
+									　また、今まで以上に明確化した部則や活動形態を目指し、部内での役職行動や提携先との合同活動で部員一人一人が実力を発揮できる環境づくりを行っています。
+								</p>
+								<br>
+								<div id="buhouHead">
+									<img src="images/photo2.jpg" width="50%" alt="新入生歓迎会">
+									<div style="margin: 0 0 0 3vw">
+										<p>他部活との合同活動では規約を設け、班としての団体活動に重きを置いております。</p>
+										<br>
+										<p>
+											そして合同活動後の夕食やクリスマス会などを通じて、たくさんの意見を交換したり部活動とは関係ない高校生らしい会話を交わすことで親睦を深め、今後の活動をより楽しく円滑に行えるようにしています
+										</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div style="background-color: rgb(0, 0, 109); color: #FFFFFF; font-size: 17px;">
-						<!-- <p style="text-align:center; font-size: 32px;"> 目次</p> -->
-						<!-- <p style="font-size: 24px; font-weight: bold;">2019年度の活動風景</p> -->
+				<div
+					style="background-color: rgb(0, 0, 109); color: #FFFFFF; font-size: 17px;">
+					<!-- <p style="text-align:center; font-size: 32px;"> 目次</p> -->
+					<!-- <p style="font-size: 24px; font-weight: bold;">2019年度の活動風景</p> -->
 
-						<div class="hidden_box">
-							<input type="checkbox" id="label3" />
-							<div style="font-size: 24px; font-weight: bold;">
-								<label for="label3">
-									部責の言葉
-								</label>
-							</div>
-							<div class="hidden_show">
-								<div style="margin: 1vw 3vw 3vw 5vw;">
-									<p>　2020年度部責の戸倉健登です。</p>
-									<p>
-										今年度の活動は新型肺炎によって7月まで一切の対面での活動が禁止されておりましたが、7月より順次感染症対策のマニュアルが学校側から承認された部活動の再開が認められました。一年生の勧誘も同月上旬から始まり、KHECには13名の新入部員が入りました。
-									</p>
-									<p>今年度の部責としての目標は「情報の透明性の向上」と「情報伝達の速さ•確実さ」、そして「部員のやりたい活動を推奨」でした。情報の透明性や速さ・確実さでは学校が管理運営するMicrosoft
-										teamsの部活動チャンネルを開設し、部長先生を含めたオープンで且つ全部員が正確な情報を即座に送信•確認できる環境構築ができました。 </p>
-									<p>
-										　また、部員のやりたい活動を推奨する一環として、今年度は7月に全員一律にプログラミング講座を開いたのちに、１年生を含めた全部員で自分らの設立したい班の勧誘プレゼンを制作し、プレゼンによって集まった班を承認する形としました。その結果電子工作よりもプログラミングやゲーム制作に偏ってしまったのですが笑。
-									</p>
-									<p>
-										　この2年間部責を務め、いろいろな部員や生徒を見てきましたが、それぞれの興味のある分野はやはり推移してきていると思います。入部当時は半田付けやブレッドボードで電子回路を組み立てると言ったことをメインでやってる部活でしたが、今では半田付けも電子回路作成も部員の１割程度しか出来ません。これが悪い事かどうかは決める事が出来ませんが、僕が部活動に求める在り方は、短い3年という期間において自分の「好き」を見つけ、大学やその後の就職などを決める手助けであるべきだと思っています。
-									</p>
-									<p>　そのためには幅広い知識の獲得や、実体験を伴う成功や失敗が必要不可欠だと感じています。</p>
-									<p>　本部報発行後に僕を含めた3年生は引退を予定しておりますが、後の世代には「部活動の在り方」と「社会人としての基本」をこの部活で身につけ、充実した高校生活と将来を送ってもらいたいです。</p>
-									<p>以上、慶應義塾高等学校電子工学研究会部責としての最後のコメントとなります。今まで本部活をご支援いただき有り難うございました。今後も本部活をよろしくお願いします。</p>
-									<br>
-									<br>
-									<p style="font-size: 24px; text-align:right;">2020年度部責 戸倉健登</p>
-								</div>
+					<div class="hidden_box">
+						<input type="checkbox" id="label3" />
+						<div style="font-size: 24px; font-weight: bold;">
+							<label for="label3">
+								部責の言葉
+							</label>
+						</div>
+						<div class="hidden_show">
+							<div style="margin: 1vw 3vw 3vw 5vw;">
+								<p>　2020年度部責の戸倉健登です。</p>
+								<p>
+									今年度の活動は新型肺炎によって7月まで一切の対面での活動が禁止されておりましたが、7月より順次感染症対策のマニュアルが学校側から承認された部活動の再開が認められました。一年生の勧誘も同月上旬から始まり、KHECには13名の新入部員が入りました。
+								</p>
+								<p>
+									今年度の部責としての目標は「情報の透明性の向上」と「情報伝達の速さ•確実さ」、そして「部員のやりたい活動を推奨」でした。情報の透明性や速さ・確実さでは学校が管理運営するMicrosoft
+									teamsの部活動チャンネルを開設し、部長先生を含めたオープンで且つ全部員が正確な情報を即座に送信•確認できる環境構築ができました。
+								</p>
+								<p>
+									　また、部員のやりたい活動を推奨する一環として、今年度は7月に全員一律にプログラミング講座を開いたのちに、１年生を含めた全部員で自分らの設立したい班の勧誘プレゼンを制作し、プレゼンによって集まった班を承認する形としました。その結果電子工作よりもプログラミングやゲーム制作に偏ってしまったのですが笑。
+								</p>
+								<p>
+									　この2年間部責を務め、いろいろな部員や生徒を見てきましたが、それぞれの興味のある分野はやはり推移してきていると思います。入部当時は半田付けやブレッドボードで電子回路を組み立てると言ったことをメインでやってる部活でしたが、今では半田付けも電子回路作成も部員の１割程度しか出来ません。これが悪い事かどうかは決める事が出来ませんが、僕が部活動に求める在り方は、短い3年という期間において自分の「好き」を見つけ、大学やその後の就職などを決める手助けであるべきだと思っています。
+								</p>
+								<p>　そのためには幅広い知識の獲得や、実体験を伴う成功や失敗が必要不可欠だと感じています。</p>
+								<p>
+									　本部報発行後に僕を含めた3年生は引退を予定しておりますが、後の世代には「部活動の在り方」と「社会人としての基本」をこの部活で身につけ、充実した高校生活と将来を送ってもらいたいです。
+								</p>
+								<p>
+									以上、慶應義塾高等学校電子工学研究会部責としての最後のコメントとなります。今まで本部活をご支援いただき有り難うございました。今後も本部活をよろしくお願いします。
+								</p>
+								<br>
+								<br>
+								<p style="font-size: 24px; text-align:right;">2020年度部責 戸倉健登</p>
 							</div>
 						</div>
 					</div>
+				</div>
 
 
 
@@ -238,65 +270,65 @@
 
 
 
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<!-- <div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<!-- <div>
 						<a href="pdf/20-03buhou_normal.pdf" download="20-03buhou_normal.pdf"
 							style="color: gray; text-decoration: none;">
 							<p style="margin: 0vw 0 1vw 5vw; font-size: 17px; color: rgb(163, 162, 162);"
@@ -310,25 +342,27 @@
 								PDF:部報web版 高画質(120MB) </p>
 						</a>
 					</div> -->
-				</div>
-
-
-				<!-- メイン ここまで -->
-				<!-- フッター -->
-				<script src="js/footer.js"></script>
-				<!-- フッター ここまで -->
 			</div>
-			<script src="https://code.jquery.com/jquery-1.12.4.min.js"
-				integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-			　　　　　　　　　　
-			<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-			<script src="js/stickyfill.min.js"></script>
-			<script src="js/script.js"></script>
-			<script>
-				var elements = document.querySelectorAll('.header');
-				Stickyfill.add(elements);
-			</script>
+
+
+			<!-- メイン ここまで -->
+			<!-- フッター -->
+			<script src="js/footer.js"></script>
+			<!-- フッター ここまで -->
 		</div>
-	</body>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"></script>
+		　　　　　　　　　　
+		<script
+			src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+		<script src="js/stickyfill.min.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+			var elements = document.querySelectorAll('.header');
+			Stickyfill.add(elements);
+		</script>
+	</div>
+</body>
 
 </html>
