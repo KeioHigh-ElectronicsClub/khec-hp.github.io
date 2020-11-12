@@ -343,8 +343,9 @@ article p {
 
 .buhou-hero {
   display: flex;
+  justify-content: center;
   padding: 5rem;
-  color: white;
+  color: rgb(233, 233, 233);
 }
 
 .buhou-hero img {
@@ -352,13 +353,12 @@ article p {
   width: 50%;
   max-width: 600px;
   height: auto;
-  margin: 0 auto;
-  margin-right: 0;
-  flex-grow: 1;
+  margin: 0;
 }
 
 .buhou-hero section {
-  flex-grow: 2;
+  flex-grow: 1;
+  max-width: 790px;
 }
 
 .buhou-hero h1 {
@@ -374,6 +374,7 @@ article p {
 
 .buhou-hero h3 {
   text-align: center;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 1000px) {
@@ -395,20 +396,39 @@ article p {
 .buhou-download {
   padding: 2vw;
   width: fit-content;
-  margin: 0 auto;
-  color: #ffffff;
+  margin: 2rem auto;
+  color: rgb(233, 233, 233);
 }
 .budhou-download-title {
   font-size: 40px;
+  text-align: center;
+}
+.buhou-download-subtitle{
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
 }
 .buhou-download-linklist {
+  display: flex;
   color: white;
   padding-left: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .buhou-download-link {
-  color: rgb(163, 162, 162);
+  display: block;
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 5px;
+  width: 15rem;
+  padding: 5px;
+  color: rgb(233, 233, 233);
   text-decoration: none;
+  text-align: center;
   font-size: 17px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
 }
 
 .buhou-download-link :hover {
