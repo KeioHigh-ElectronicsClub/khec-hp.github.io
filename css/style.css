@@ -304,7 +304,7 @@ input[type='submit']:hover {
 }
 /* 部報ページ
 ------------------------------- */
-#buhou {
+#buhdou {
   font-size: 20px;
 }
 #buhouHead {
@@ -403,7 +403,7 @@ article p {
   font-size: 40px;
   text-align: center;
 }
-.buhou-download-subtitle{
+.buhou-download-subtitle {
   font-size: 15px;
   font-weight: normal;
   margin: 0;
@@ -428,13 +428,26 @@ article p {
   font-size: 17px;
   margin-right: 1rem;
   margin-bottom: 1rem;
-
 }
 
 .buhou-download-link :hover {
   opacity: 0.8;
 }
 
+.buhou-about {
+  color: #ffffff;
+  font-size: 17px;
+}
+.buhou-about-red {
+  background-color: rgb(110, 0, 0);
+}
+.buhou-about-blue {
+  background-color: rgb(0, 0, 109);
+}
+.buhou-about-label {
+  font-size: 24px;
+  font-weight: bold;
+}
 .hidden_box {
   margin: 1px 0 1px 0;
   padding: 0;
@@ -464,22 +477,24 @@ article p {
 }
 
 .hidden_box .hidden_show {
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   opacity: 0;
   padding: 0;
   text-align: left;
   transition: 0.5s;
+  transition-property: max-height, opacity;
 }
-
+.hidden_show_inner {
+  padding: 1vw 3vw 3vw 5vw;
+}
 .hidden_box input:checked + label:after {
   content: ' ▲'; /* 開いている状態のときにラベルの後ろに続く文字 */
 }
 
 .hidden_box input:checked ~ .hidden_show {
-  height: auto;
+  max-height: 9999px;
   opacity: 1;
-  padding: 10px 0;
 }
 
 /* Arduinoテキスト
