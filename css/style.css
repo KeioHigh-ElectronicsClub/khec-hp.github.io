@@ -477,13 +477,13 @@ article p {
 }
 
 .hidden_box .hidden_show {
-  max-height: 0;
+  height: 0;
   overflow: hidden;
   opacity: 0;
   padding: 0;
   text-align: left;
   transition: 0.5s;
-  transition-property: max-height, opacity;
+  transition-property: padding, opacity;
 }
 .hidden_show_inner {
   padding: 1vw 3vw 3vw 5vw;
@@ -493,8 +493,9 @@ article p {
 }
 
 .hidden_box input:checked ~ .hidden_show {
-  max-height: 9999px;
   opacity: 1;
+  padding: 10px 0;
+  height: auto;
 }
 
 /* Arduinoテキスト
