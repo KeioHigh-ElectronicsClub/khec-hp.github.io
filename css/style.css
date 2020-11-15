@@ -485,17 +485,33 @@ article p {
   transition: 0.5s;
   transition-property: padding, opacity;
 }
-.hidden_show_inner {
-  padding: 1vw 3vw 3vw 5vw;
-}
+
 .hidden_box input:checked + label:after {
   content: ' ▲'; /* 開いている状態のときにラベルの後ろに続く文字 */
 }
-
 .hidden_box input:checked ~ .hidden_show {
   opacity: 1;
   padding: 10px 0;
   height: auto;
+}
+.hidden_show_inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow: hidden;
+}
+.hidden_show_inner img {
+  float: left;
+  width: 50%;
+  max-width: 500px;
+  margin: 1rem;
+  margin-left: 0;
+}
+@media screen and (max-width: 600px) {
+  .hidden_show_inner img {
+    float: none;
+    width: 100%;
+  }
 }
 
 /* Arduinoテキスト
