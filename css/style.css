@@ -366,6 +366,10 @@ article p {
   text-align: center;
 }
 
+.hidden_show_inner p{
+  margin-bottom: 1rem;
+}
+
 /* aks = あんまり改行してほしくない */
 /* inline-blockにしたspanで囲んだ範囲をあんまり改行されないようにする */
 .aks {
