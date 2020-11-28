@@ -227,6 +227,20 @@ body div {
   color: #2c7cff;
   text-decoration: none;
 }
+.buhou2020 {
+  display: block;
+  width: 100%;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+}
+.buhou2020 a {
+  padding: 0 20px;
+  font-size: 2rem;
+  color: #ff4e4e;
+  text-decoration: none;
+}
 .date {
   position: relative;
   display: inline-block;
