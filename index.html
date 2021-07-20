@@ -1,112 +1,31 @@
-<!doctype html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <title>慶應高校電子工学研究会</title>
-    <meta name="description" content="慶應高校電子工学研究会公式サイト。新入生へ、私達について、Arduinoレファレンス、作品、技術資料、活動記録、外部リンク。">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- OGP設定 -->
-    <meta property="og:url" content="https://khec.ml/index.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="慶應高校電子工学研究会 ホームページ">
-    <meta property="og:description" content="慶應高校電子工学研究会公式サイト。新入生へ、私達について、Arduinoレファレンス、作品、技術資料、活動記録、外部リンク。">
-    <meta property="og:image" content="https://khec.ml/images/logo.png">
-    <meta name="twitter:site" content="https://khec.ml/">
-    <meta name="twitter:image" content="https://khec.ml/images/logo.png">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172973845-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-172973845-1');
-    </script>
+<!DOCTYPE html>  <!-- この行では、この文書がHTML5(最新バージョンのHTML)で記述されたものであると宣言しています。-->
+<html>
+<head>  <!-- <head>と</head>の間にタイトルや文字コード等、ページ本体には表示しない「設定」の様な情報を記述します。 -->
+<meta charset="UTF-8">  <!-- この行では、文字コードをUTF-8に設定しています。 -->
+<title>自己紹介ページ</title>
+<!-- <style>と</style>の間に、CSSを書きます。 -->
+<style>
+body {
+    background: white;
+}
+h1 {
+    text-align: center;
+}
+img {
+    margin: 50%;
+}
+.sentence{color: black;}
+</style>
 </head>
-
-<body>
-    <script src="js/header.js"></script>
-    <div class="wrapper emergency" onclick="">
-        <p>
-            　本部活では7/6(月)から部活動を再開しております。活動日は当面の間火曜日と木曜日です。(新世紀参照)会場はA棟2階A29教室です。持ち物はなくて大丈夫です。仮入部届は当日不要なので気軽にお越しください。
-        </p>
-    </div>
-    <section class="topics">
-           <div>
-               <div class="date">
-                    <p>『2020年度部報公開のお知らせ』</p>
-                </div>
-                <a href="buhou.html">
-                    <img src="images/buhou2020_top.jpg"
-                        style="object-position: 50% 0%; font-family: 'object-fit: cover; object-position: center top;'">
-                </a>
-                <div class="buhou2020">
-                    <a href="buhou.html">詳細＞</a>
-                    <a href="pdf/20-09buhou_normal.pdf">PDFを開く＞</a>
-                </div>
-            </div>
-        <div>
-            <div class="date">
-                <p>20/07/05　『全部員自己紹介ページ公開のお知らせ』</p>
-            </div>
-            <a href="members.html">
-                <img src="images/members.png" style="object-position: 50% 0%; font-family: 'object-fit: cover; object-position: center top;'">
-            </a>
-        </div>
-        <div>
-            <div class="date">
-                <p>20/07/02　『備品検索ページ公開のお知らせ』</p>
-            </div>
-            <a href="equipmentSearch.html">
-                <img src="images/search.png" style="object-position: 50% 0%; font-family: 'object-fit: cover; object-position: center top;'">
-            </a>
-        </div>
-        <div>
-            <div class="date">
-                <p>『2019年度部報公開のお知らせ』</p>
-            </div>
-            <a href="buhou.html">
-                <img src="images/buhou_top.png" style="object-position: 50% 0%; font-family: 'object-fit: cover; object-position: center top;'">
-            </a>
-            <div class="float">
-                <a href="buhou.html">詳細＞</a>
-                <a href="pdf/20-03buhou_normal.pdf">PDFを開く＞</a>
-            </div>
-        </div>
-        <h2 class="page-title" style="background: rgb(48, 48, 48); color: white; margin-bottom: 10px;">↓近日公開</h2>
-        <div>
-            <a href="untitled.html">
-                <img src="images/3Dmodel_top.png" style="object-position: 50% 0%; font-family: 'object-fit: cover; object-position: center top;'">
-            </a>
-        </div>
-        <h2 class="page-title" style="background: rgb(48, 48, 48); color: white;">↓近日公開</h2>
-        <div>
-            <a href="untitled.html">
-                <img src="images/nfcTopic.png">
-            </a>
-        </div>
-    </section>
-    <!-- /.topics -->
-
-    <script src="js/footer.js"></script>
-
-    <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/stickyfill.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script src="js/script.js"></script>
-    <!-- IE対応 -->
-    <script>
-        var elem = document.querySelectorAll('.sticky');
-        Stickyfill.add(elem);
-    </script>
+<body>  <!-- <body>と</body>の間に、文章等のページ本体に表示したい内容を記述します。 -->
+<h1 class="sentence">スター</h1>
+<img src="star_logo.png" width="50" height="50">
+<p class="sentence">電工研2年（2020年7月時点）のスターと申します。</p>
+<p class="sentence">使っている画像は僕自身がこのページのために五分ちょいで製作した物で、自分の名前を表していて一切の政治的な意図はありません。いや、割とマジで。</p>
+<h2 class="sentence">趣味</h2>
+<p class="sentence">自分の趣味は変な方向に多彩です。一般的な物はyoutubeを観たり（日本語、英語問わず）、マニアックな趣味はジョジョ（第四部までなら）とか銃をちょっと（部品や構造は分かりませんごめんなさい）とかSCP関連（これはかなりガチ勢の自信あり）とか知ってます。</p>
+<h2 class="sentence">プログラミングの腕など</h2>
+<p class="sentence">正直言ってそんなでもないです。むしろこの部活に入ってから初めて本格的にプログラミングしたって言う事実から察してください。</p>
+<p class="sentence">そんな僕でもこの部活入って楽しくやれるんでみんなも是非入ってね（唐突な勧誘）</p>
 </body>
-
 </html>
