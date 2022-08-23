@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    display: inline-block;
+}
+
+.wrapper{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box{
+    display: table;
+}
+
+.td1{
+    display: table-cell;
+    width: 340px;
+}
+
+.td2{
+    display: table-cell;
+    width: 100%;
+    min-width: 340px;
+}
+
+.headline{
+    font-size: 500%;
+    color: white;
+    background-color: #000050;
+    text-align: center;
+    min-width: 680px;
+}
+
+.footline{
+    background-color: #000050;
+    min-width: 680px;
+}
+
+.dc1{
+    font-size: 150%;
+    width: 320px;
+    text-align: center;
+}
+
+.dc2{
+    font-size: 150%;
+    text-align: left;
+    min-width: 640px;
+}
+
+.dc3{
+    width: 320px;
+    text-align: center;
+}
+
+.dc4{
+    font-size: 50%;
+    min-width: 320px;
+    text-align: center;
+}
+
+.image1{
+    background-size: contain;
+    background-position: center;
+    background-image: url("img/hato.jpg");
+    background-repeat: no-repeat;
+}
+
+.head1{
+    text-align: center;
+    min-width: 300px;
+    height: auto;
+    border-right: solid 10px #bebebe;
+    border-left: solid 10px #bebebe;
+    background-color: #14006b;
+    color: #ffffff;
+    border-radius: 7px;
+}
+
+.head2{
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    width: 50%;
+    min-width: 560px;
+    height: auto;
+    border-right: solid 10px #bebebe;
+    border-left: solid 10px #bebebe;
+    background-color: #14006b;
+    color: #ffffff;
+    border-radius: 7px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html> <!-- この行では、この文書がHTML5(最新バージョンのHTML)で記述されたものであると宣言しています。-->
+<html>
+
+<head>
+  <!-- <head>と</head>の間にタイトルや文字コード等、ページ本体には表示しない「設定」の様な情報を記述します。 -->
+  <meta charset="UTF-8"> <!-- この行では、文字コードをUTF-8に設定しています。 -->
+  <title>自己紹介ページ</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- <style>と</style>の間に、CSSを書きます。 -->
+  <style>
+    body {
+      color: rgb(201, 201, 201);
+      background-color: rgb(14, 13, 13);
+      width: 90%;
+      margin: 0 auto;
+      font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    }
+
+    .all-wrap {
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
+
+    main {
+      flex-grow: 2;
+      min-width: 350px;
+      margin: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    h3 {
+      border-bottom: 1px solid rgb(182, 182, 182);
+      border-left: 3px solid rgb(182, 182, 182);
+      padding-left: 0.5rem;
+    }
+
+    li>p {
+      padding-left: 1rem;
+    }
+
+    .img-wrap {
+      flex-grow: 1;
+      width: 50%;
+      margin: 5px;
+    }
+
+    .img-wrap>p {
+      width: 90%;
+      margin: 0 auto;
+      font-size: small;
+    }
+
+    .img-wrap>img {
+      width: 100%;
+      padding: 0;
+    }
+
+    .anime-wrap {
+      width: 50%;
+      height: 200px;
+      margin: 20px auto;
+    }
+
+    .anime-wrap>p {
+      margin: 0 auto;
+      width: fit-content;
+    }
+
+    .anime {
+      margin: 60px auto;
+      width: 10em;
+      height: 10em;
+      border: 10px solid aliceblue;
+      border-radius: 50%;
+      animation: rotation 3s linear 0s infinite normal none running;
+      font-size: 10px;
+      position: relative;
+      text-indent: -9999em;
+    }
+
+    @keyframes rotation {
+      0% {
+        background-color: rgb(248, 133, 133);
+        border-color: rgb(248, 133, 133);
+      }
+
+      50% {
+        background-color: rgb(53, 53, 250);
+        border-color: rgb(53, 53, 250);
+      }
+
+      100% {
+        background-color: rgb(248, 133, 133);
+        border-color: rgb(248, 133, 133);
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Oyakiのページ</h1>
+  <div class=" all-wrap">
+    <main>
+      <ul>
+        <li>
+          <h3>所属係</h3>
+          <p>備品管理係</p>
+        </li>
+        <li>
+          <h3>所属制作班</h3>
+          <p>クイズ判定機班、C++班</p>
+        </li>
+        <li>
+          <h3>関わったもの</h3>
+          <p>IR戦車、NFC、イライラ棒</p>
+        </li>
+        <li>
+          <h3>電工研に入った理由</h3>
+          <p>情報科学研究会に入部する方法が分からなかったから</p>
+        </li>
+
+      </ul>
+    </main>
+    <div class="img-wrap">
+      <img src="nixie.jpg" alt="nixie" srcset="">
+      <p>ニキシー管。Steins;Gateを見て以来好きな電子部品ではあるものの、高いからダイバージェンスメーターを作りたくはならない</p>
+    </div>
+  </div>
+
+  <div class="anime-wrap">
+
+    <div class="anime"></div>
+    <p>特に意味もなく色が変わるやつ</p>
+  </div>
+</body>
+
+</html>
