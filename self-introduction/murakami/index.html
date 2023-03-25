@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <title>HTML Tutorial</title>
+    <head>
+        <meta http-equiv="content-type" charset="UTF-8">
+        <style>
+            div.gallery {
+                margin: 5px;
+                border: 1px solid #ccc;
+                text-align: center;
+                float: left;
+                width: 30%;
+            }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+            div.desc {
+                padding: 15px;
+                text-align: center;
+                color: white;
+            }
+        </style>        
+    </head>
+    <body style="background-image: url('bg.png');">
+        <h1 style="color: white; font-size: 80px;">くりっくりー</h1>
+        <p style="font-size: 25px; color: white;">
+            <img src="logo.gif" style="float:right; width:25%; height:25%;">
+            こんにちは！くりっくりーと申します。<br>
+            僕はスマホよりパソコンを先に手に入れたこともあり、パソコン関係の色々なことに手を出してきました。例えば、Fusion 360を使った3Dモデリング、Scratchや似た系統の擬似プログラミングツールを使った簡易的なプログラミング、HTMLでのWebページ作成などの経験があります。<br>
+            もちろん、実際のプログラミング言語を使ったプログラミングにも興味があり、Pythonに手を出したのですが、当時の僕には独学で学ぶには難しすぎたため挫折してしまいました。<br>
+            そこで慶應高校に入学してこの部活を知り、プログラミングに再挑戦してみようと思いました。<br>
+            そこでC++班に入ったのですが、なんやかんやあって今はC++ではなく昔多少触れたことのあるPythonを使ってDiscordのBOT作りをしています。<br>
+            僕が作ったのはモデレーションBOT+αです。迷惑度というパラメーターを使って普通のメッセージかスパムメッセージかを判断し、自動的にユーザーのミュートを行います。<br>
+            他にもVC作成という一人一人個別のVCを作成する機能や、サーバーで行われた処罰を処罰履歴に記載するためのコマンドなど、便利な機能を作りました。<br>
+            このBOTは今も改善中ですが、現在は主に別のレベルBOTと言うものに取り組んでいます。
+        </p>
+        <div class="gallery">
+            <a target="_blank" href="1.png">
+              <img src="1.png" alt="自動モデレーションBOTのコード" width="600" height="400">
+            </a>
+            <div class="desc">自動モデレーションBOTのコードの一部。<br>全部合わせると3000行以上になる。</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="2.png">
+              <img src="2.png" alt="作成途中のレベルBOTのコード" width="600" height="400">
+            </a>
+            <div class="desc">現在作成中のレベルBOTのソースコードの一部。<br>既に1200行以上書かれている。</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="3.png">
+              <img src="3.png" alt="レベル機能" width="600" height="400">
+            </a>
+            <div class="desc">作成途中のレベルBOTのレベル確認コマンド。</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="4.png">
+              <img src="4.png" alt="処罰履歴記入機能" width="600" height="400">
+            </a>
+            <div class="desc">サーバーで行われた処罰を処罰履歴に簡単に記入できるコマンド。</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="5.png">
+              <img src="5.png" alt="VC作成機能" width="600" height="400">
+            </a>
+            <div class="desc">新しくVCを作成し、名前の変更や人数制限、他の人から見えなくなるプライベート設定などを行っている。</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="6.png">
+              <img src="6.png" alt="自動モデレーション機能" width="600" height="400">
+            </a>
+            <div class="desc">自動モデレーション機能が発動し、長文スパムを行ったユーザーが処罰されている。</div>
+          </div>
+    </body>
+</html>
+

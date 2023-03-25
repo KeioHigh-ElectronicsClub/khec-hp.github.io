@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.color1{
+    color: aqua;
+    text-align: center;
+    font-size: 100px;
+}
+.center{
+    text-align: center;
+    font-size: 20px;
+}
